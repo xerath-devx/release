@@ -4,13 +4,13 @@ local RunService = game:GetService("RunService")
 local SoundService = game:GetService("SoundService")
 
 local Config = {
-    HubName = "Xerath Hub",
+    HubName = "Zero Hub",
     Subtitle = "Public Version",
-    LogoLetter = "X",
+    LogoLetter = "Z",
     ImageLogo = "",
     LoadTime = 3,
 
-    ScriptToLoad = "https://raw.githubusercontent.com/xerath-devx/release/refs/heads/main/script.lua",
+    ScriptToLoad = "https://raw.githubusercontent.com/n00bguyy/ZeroHub/refs/heads/main/mainmain",
 
     Messages = {
         "Connecting...",
@@ -78,7 +78,7 @@ blur.Size = 0
 blur.Enabled = true
 
 local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "XerathHubLoader"
+screenGui.Name = "ZeroHubLoader"
 screenGui.ResetOnSpawn = false
 screenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 screenGui.DisplayOrder = 999
@@ -464,6 +464,6 @@ task.spawn(function()
         end)
     else
         displayFatalError("Error: Script failed to load.")
-        warn("[XerathHub] Critical Error: The main script failed to load.", result)
+        warn("[ZeroHub] Critical Error: The main script failed to load.", result)
     end
 end)
